@@ -1,0 +1,113 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Header Styles */
+.header {
+    background-color: #ff3366; /* Bright pink */
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    border-bottom: 3px solid #000000; /* Dark line at the bottom of the header */
+    background: linear-gradient(135deg, #ff3366 30%, #ff6699 100%); /* Gradient background */
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+    border-top: 3px solid #000000; /* Dark line at the top of the footer */
+    background: linear-gradient(135deg, #ff6699 30%, #ff3366 100%); /* Gradient background */
+}
+
+/* Content Container */
+.main-content {
+    margin-top: 10rem; /* Account for header height */
+    margin-bottom: 6rem; /* Account for footer height */
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    flex-grow: 1;
+    overflow-y: auto; /* Allow scrolling if content overflows */
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Heading Styles */
+h1 {
+    color: #ff3366; /* Bright pink */
+    font-size: 2.5rem;
+    margin-bottom: 2rem; /* Added more space between heading and content */
+    text-transform: uppercase;
+}
+
+/* Adjust h2 styling */
+h2 {
+    color: #4caf50; /* Vibrant green */
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 2rem; /* More space above h2 */
+    margin-bottom: 1rem; /* Added some space below */
+    text-transform: capitalize;
+}
+
+/* Link Styles */
+a {
+    color: #4caf50; /* Lime green */
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #ff3366; /* Bright pink on hover */
+}
+
+/* Profile Picture Styles */
+.profile-pic {
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    margin: 30px auto;
+    display: block;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Add more space between text */
+p {
+    margin-top: 1rem; /* Add some margin above the paragraph */
+    line-height: 1.8; /* Increase line height for readability */
+    text-align: justify; /* Make paragraphs more readable */
+    padding: 0 10px; /* Add some padding for better readability */
+}
+
+/* Optional: Adjust paragraph size for better fit */
+p.about {
+    max-width: 700px;
+    margin: 0 auto;
+}
